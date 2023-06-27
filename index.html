@@ -1,96 +1,79 @@
-body {
-    color: black;
-    background-color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 0%;
-    margin: 0%;
-}
-ul {
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    padding: 16px;
-}
-
-img {
-    width: 200px;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MKS</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <body>
+        <nav>
+           
+         <ul>
+             <li> 
+                 <img src="img/images/logo-1287578799-1678493887-f6c77668d47fe46558e6cadac86948621678493888-480-0.png">
+             <li> 
+               
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="https://www.google.com/intl/pt-BR/gmail/about/"><input type="button" value="contato@lojamks.com.br"></a>
+                            <a href="https://www.instagram.com/lojamks/"><input type="button" value="instagram"></a>
+                        </li>
+                    </ul>
+                </nav>
+            
+         </ul>
+     </body>
+     </html>
 
     
-body{
-    margin:0;
-    padding:0;
-    width:100%;
-    height:100vh;
-    display: center;
-    justify-content: center;
-    align-items: center;
-}
+    <div class="slider">
+
+        <div class="slides">
+        <!--radio button-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+         <!--fim radio button-->
+
+        <!--slide image-->
+        <div class="slide first">
+            <img src="img/images/imagem 1.webp" alt="imagem 1"/>
+        </div>
+
+        <div class="slide">
+            <img src="img/images/imagem 2.webp" alt="imagem 2"/>
+        </div>
+
+        <div class="slide">
+            <img src="img/images/imagem 4.jpg" alt="imagem 3"/>
 
 
-.slider{
-    margin: 0 auto;
-    width: 800px;
-    height: 600px;
-    overflow: hidden;
-}
+        </div>
 
-.slides{
-    width: 400%;
-    height: 600px;
-    display: flex;
-}
+        <!--fim slide image-->
 
-.slides input{
-    display: none;
-}
+        <!--navigation auto-->
+            <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
 
-.slide{
-    width: 25%;
-    position:relative;
-    transition: 4s;
-}
+        </div>
+        </div>
 
-.slide img{
-    width: 800px;
-}
+            <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+        </div>
 
-.manual-navigation{
-    position: absolute;
-    width: 800px;
-    margin-top: -40px;
-    display: flex;
-    justify-content: center;
-}
 
-.manual-btn{
-    border: 2px solid white;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
+    </div>
 
-.manual-btn:not(:last-child){
-    margin-right: 10px;
-}
-
-.manual-btn:hover{
-    background-color: white;
-}
-
-#radio1:checked ~ .first{
-    margin-left: 0;
-}
-
-#radio2:checked ~ .first{
-    margin-left: -25%;
-}
-
-#radio3:checked ~ .first{
-    margin-left: -50%;
-}
-
-#radio1:checked ~ .navigation-auto .auto-btn1{
-    background-color: white;
-}
+    <script src="script.js"></script>
+</body>
+</html>
